@@ -16,5 +16,8 @@ docker-compose exec api alembic upgrade head
 # run tests
 docker-compose exec api pytest -v -l --tb=short --maxfail=1 tests/
 
+# list users
+docker-compose exec api dundie user-list
+
 # Stop environment
 docker-compose down
